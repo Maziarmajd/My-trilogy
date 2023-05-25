@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d3cfc3;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  font-family: "Rubik Distressed", cursive;
+  font-size: 50px;
+}
+
+.header .logo {
+  margin-bottom: 10px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #ff0000;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #d3cfc3;
+  font: 30px "Moon Dance", cursive;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a
+{
+    color: #FFF;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+
+h1 {
+  text-align: center;
+}
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.movie {
+  width: 350px;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.movie img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+.movie h2 {
+  font-family: "Moon Dance", cursive;
+}
+.movie p,
+li {
+  font-family: "Caveat", cursive;
+}
+
+.movie a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: #ff0000;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* animations */
+
+
+@keyframes fadeMoveAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.header .logo img {
+  animation: fadeMoveAnimation 1s ease-in-out forwards;
+}
+
+
+/* Border from Y to X  */
+ul.borderYtoX a:before, ul.borderYtoX a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    height: 100%;
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+ul.borderYtoX a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+ul.borderYtoX a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+ul.borderYtoX a:hover:before, ul.borderYtoX a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
