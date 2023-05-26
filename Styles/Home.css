@@ -40,6 +40,35 @@ body {
   max-height: 100%;
 }
 
+
+/* title */
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -5px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+    font-family: "Rubik Distressed", cursive;
+  position: relative;
+  display: inline-block;
+  color: #0a0a0a;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+
+
 .line {
   width: 100%;
   height: 1px;
@@ -52,7 +81,7 @@ body {
 .navbar {
   list-style-type: none;
   margin: 0;
-  padding: 10px;
+  padding: 30px;
   overflow: hidden;
   background-color: rgb(193, 193, 230);
   font-family: "Moon Dance", cursive;
@@ -81,7 +110,6 @@ body {
     z-index: 0;
     cursor: pointer;
 }
-
 
 
 /* movies */
