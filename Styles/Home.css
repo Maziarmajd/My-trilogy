@@ -84,8 +84,7 @@ body {
   padding: 30px;
   overflow: hidden;
   background-color: rgb(193, 193, 230);
-  font-family: "Moon Dance", cursive;
-  font-size: 30px;
+  font: 30px "Moon Dance", cursive;
 }
 
 .navbar li {
@@ -94,7 +93,7 @@ body {
 
 .navbar li a {
   display: block;
-  color: white;
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
